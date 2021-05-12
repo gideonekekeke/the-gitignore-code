@@ -32,4 +32,4 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/api", fileRoutes.routes);
 
-app.listen(process.env.PORT, () => console.log("loading"));
+app.listen(port, () => console.log(`listening on ${port}`));
