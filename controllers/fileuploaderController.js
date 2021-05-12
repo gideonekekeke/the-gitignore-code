@@ -32,8 +32,8 @@ const multipleFileUpload = async (req, res, next) => {
 
     const multipleFiles = new MultipleFile({
       fullname: req.body.fullname,
-      schoolName: req.body.schoolName,
-      schoolLocation: req.body.schoolLocation,
+      schoolname: req.body.schoolname,
+      schoollocation: req.body.schoollocation,
       phoneNumber: req.body.phoneNumber,
       email: req.body.email,
       password: req.body.password,

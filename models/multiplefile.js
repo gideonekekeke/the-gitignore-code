@@ -6,28 +6,28 @@ const mulitipleFileSchema = new Schema(
   {
     fullname: {
       type: String,
-      // required: true,
+      required: true,
     },
-    schoolName: {
+    schoolname: {
       type: String,
-      // required: true,
+      required: true,
     },
-    schoolLocation: {
+    schoollocation: {
       type: String,
-      // required: true,
+      required: true,
     },
     phoneNumber: {
       type: Number,
-      // required: true,
+      required: true,
     },
     email: {
       type: String,
-      // required: true,
+      required: true,
     },
 
     password: {
       type: String,
-      // required: true,
+      required: true,
     },
 
     files: [Object],
