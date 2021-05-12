@@ -10,7 +10,7 @@ const fileRoutes = require("./routes/file-upload-routes");
 const url =
   "mongodb+srv://shotkode:shotkode@cluster0.2kfdg.mongodb.net/shotkodeDB?retryWrites=true&w=majority";
 
-const port = process.env.PORT || 4000;
+// const port = process.env.PORT || 4000;
 // const port = 58990;
 
 mongoose
@@ -32,4 +32,4 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/api", fileRoutes.routes);
 
-app.listen(process.env.PORT || 5000, () => console.log("loading"));
+app.listen(process.env.PORT, () => console.log("loading"));
